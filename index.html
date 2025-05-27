@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>회원가입</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>회원가입</h2>
+    <form class="signup-form">
+      <div class="form-group">
+        <label>아이디</label>
+        <div class="row">
+          <input type="text" />
+          <button type="button">중복확인</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>비밀번호</label>
+        <input type="password" />
+        <input type="password" placeholder="비밀번호 재확인" />
+      </div>
+
+      <div class="form-group">
+        <label>이름</label>
+        <input type="text" value="김실명" />
+      </div>
+
+      <div class="form-group">
+        <label>주소</label>
+        <div class="row">
+          <input type="text" />
+          <input type="text" />
+          <button type="button">우편번호</button>
+        </div>
+        <input type="text" />
+      </div>
+
+      <div class="form-group">
+        <label>휴대전화</label>
+        <div class="row">
+          <select><option>010</option></select>
+          <input type="text" />
+          <input type="text" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>전화번호</label>
+        <div class="row">
+          <select><option>010</option></select>
+          <input type="text" />
+          <input type="text" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>이메일</label>
+        <div class="row">
+          <input type="text" />
+          <span>@</span>
+          <select><option>naver.com</option></select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>생년월일</label>
+        <div class="row gender">
+          <label><input type="radio" name="gender" checked /> 양</label>
+          <label><input type="radio" name="gender" /> 음</label>
+        </div>
+        <div class="row">
+          <select><option>2014</option></select>
+          <select><option>09</option></select>
+          <select><option>30</option></select>
+        </div>
+      </div>
+
+      <div class="form-group checkboxes">
+        <label><input type="checkbox" checked /> 이메일을 수신합니다.</label>
+        <label><input type="checkbox" checked /> SMS를 수신합니다.</label>
+      </div>
+
+      <div class="form-group buttons">
+        <button type="button" class="cancel">가입 취소</button>
+        <button type="submit" class="submit">회원 가입</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
